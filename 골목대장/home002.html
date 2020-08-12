@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .greeting{
+      text-align: center;
+    }
+    .greeting:nth-child(odd){
+      background-color: lavender;
+    }
+    .greeting:nth-child(even){
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <ul class="nav justify-content-center nav-pills nav-justified">
+      <li class="nav-item">
+        <a href="#home" class="nav-link active" data-toggle="pill">메뉴1</a>
+      </li>
+      <li class="nav-item">
+        <a href="#menu2" class="nav-link" data-toggle="pill">메뉴2</a>
+      </li>
+      <li class="nav-item">
+        <a href="#menu3" class="nav-link" data-toggle="pill">메뉴3</a>
+      </li>
+      <li class="nav-item">
+        <a href="#menu4" class="nav-link" data-toggle="pill">메뉴4</a>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane container active" id = "home">
+        <h1>home</h1>
+        <p>This is home</p>
+      </div>
+      <div class="tab-pane container fade" id="menu2">
+        <h1>menu2</h1>
+        <p>This is menu2</p>
+      </div>
+      <div class="tab-pane container fade" id = "menu3">
+        <h1>menu3</h1>
+        <p>This is menu3</p>
+      </div>
+      <div class="tab-pane container fade" id = "menu4">
+        <h1>menu4</h1>
+        <p>This is menu4</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 greeting">hello</div>
+      <div class="col-md-4 greeting">hello</div>
+      <div class="col-md-4 greeting">hello</div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
