@@ -7,8 +7,21 @@
 	<title>CSS Flex</title>
 	<link rel="stylesheet" href="default.css">
 	<style>
+		@media (min-width: 600px) {
+			/* 600px넘어가면 flex됨. */
+		}
+			.flex-container{
+				display: flex;
+			}
+			.flex-item {
+				flex: 1;
+			}
+		}
+
+
 		.flex-container{
-			display: flex;
+
+			/* display: flex; */
 			/* display: inline-flex; */
 
 			/* flex-direction: row-reverse; */
@@ -17,8 +30,10 @@
 
 			/* flex-wrap: wrap; */
 
-			flex-flow: row wrap;
+			/* flex-direction과 flex-wrap을 동시에 쓸수있음.*/
+			/* flex-flow: row wrap; */
 		}
+
 	</style>
 </head>
 <body>
