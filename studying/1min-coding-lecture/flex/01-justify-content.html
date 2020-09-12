@@ -7,35 +7,11 @@
 	<title>CSS Flex</title>
 	<link rel="stylesheet" href="default.css">
 	<style>
-		@media (min-width: 600px) {
-			/* 600px넘어가면 flex됨. */
-		}
-			.flex-container{
-				display: flex;
-
-				/* 아래에서 flex-direction이 디폴트로 column이어서  */
-				flex-direction: row;
-			}
-			.flex-item {
-				flex: 1;
-			}
-		}
-
 
 		.flex-container{
 
 			display: flex;
-			/* display: inline-flex; */
-
-			/* flex-direction의 default는 row */
-			/* flex-direction: row-reverse; */
-			flex-direction: column;
-			/* flex-direction: column-reverse; */
-
-			/* flex-wrap: wrap; */
-
-			/* flex-direction과 flex-wrap을 동시에 쓸수있음.*/
-			/* flex-flow: row wrap; */
+			justify-content: center;
 		}
 
 	</style>
