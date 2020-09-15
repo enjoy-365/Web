@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Flex</title>
+	<link rel="stylesheet" href="default.css">
+	<style>
+
+		.flex-container{
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.flex-item {
+			flex: 1 1 auto; /*basis가 0이면 점유율 0%라 생각해서 wrap안됨.*/
+		}
+		.flex-item:nth-child(1){
+			width: 20%;
+		}
+		.flex-item:nth-child(2){
+			width: 60%;
+		}
+		.flex-item:nth-child(3){
+			width: 20%;
+		}
+		.flex-item p {
+			/* white-space: nowrap; /* 그러면 크기가 어마어마하게 늘어남. 자기가 강제로 안줄임. */
+			/* //따라서 크기가 fix된 다단 column은 width와 height쓰는게 좋음.*/
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+		<div class="flex-item">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde iusto inventore dicta fugiat nemo illum blanditiis, laboriosam, amet delectus dolor voluptates ullam quos explicabo architecto ipsam mollitia laborum saepe. Magni eveniet voluptas, facilis voluptate provident tempora, harum molestiae laborum, distinctio quos rem veniam. Voluptatum dignissimos nam hic nisi rerum quibusdam!
+			</p>
+			<!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, repellat aut suscipit nesciunt ipsum exercitationem soluta, dolores, labore reprehenderit libero accusamus quidem debitis fugiat, delectus. Velit omnis magnam consectetur labore ex, praesentium itaque temporibus corporis sunt commodi excepturi debitis asperiores. Qui, reiciendis sunt facilis numquam dicta, aliquam consequatur dolores distinctio. -->
+		</div>
+		<div class="flex-item">BBBBBBBBBBBBBBBB</div>
+		<div class="flex-item">CCCCCC</div>
+		<div class="flex-item">DDDDDDDDDDDDDDDDDDDDD</div>
+	</div>
+</body>
+</html>
